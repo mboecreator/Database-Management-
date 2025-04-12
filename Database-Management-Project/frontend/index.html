@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Library Management System</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search books...">
+                <button id="searchButton" title="Search books"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="database-toggle">
+                <button id="mysqlButton" class="active">MySQL</button>
+                <button id="mongodbButton">MongoDB</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="books-section">
+                <h2>Available Books</h2>
+                <div id="booksList" class="books-grid"></div>
+            </section>
+
+            <section class="book-details" id="bookDetails">
+                <h2>Book Details</h2>
+                <div id="bookInfo"></div>
+                <div class="reviews-section">
+                    <h3>Reviews</h3>
+                    <div id="reviewsList"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
